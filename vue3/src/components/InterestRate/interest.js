@@ -6,7 +6,7 @@ const CARD_PAY_INTEREST_RATE = 0.60
 const ANNUALIZED_INTEREST_RATE = 2
 
 // 计算函数
-function compute (amount = 10000, day = 56) {
+export default function compute (amount = 10000, day = 56) {
   // 手机支付日利率
   const phoneDayRate = PHONE_PAY_INTEREST_RATE / day
 
@@ -28,6 +28,10 @@ function compute (amount = 10000, day = 56) {
     '金额': {
       '手机支付': amount,
       '信用卡支付': amount
+    },
+    '最长免息期': {
+      '手机支付': day,
+      '信用卡支付': day
     },
     '': {},
     [`日利率`]: {
@@ -113,5 +117,5 @@ function compute (amount = 10000, day = 56) {
     }
   }
   
-  console.table(test)
+  return test
 }
