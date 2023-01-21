@@ -11,7 +11,7 @@ onMounted(() => {
   const dom: HTMLElement = document.getElementById('chart')
   const chart = echarts.init(dom)
 
-  const options: echarts.EChartsOption = {
+  const options = {
     textStyle: {
       color: '#ccc',
     },
