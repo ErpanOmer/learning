@@ -3,11 +3,18 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
     title: 'Learning',
     titleTemplate: '学习笔记',
+    head: [
+        [
+            'link',
+            { rel: 'icon', type: 'image/svg+xml',  href: 'favicon.svg' }
+        ]
+    ],
     // appearance: 'dark',
     outDir: '../dist',
     // lastUpdated: true,
     // lastUpdatedText: 'Updated Date',
     themeConfig: {
+        logo: 'me.jpg',
         socialLinks: [
             { 
                 icon: "github",
