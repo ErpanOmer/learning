@@ -5,8 +5,8 @@ export default defineConfig({
     titleTemplate: '学习笔记',
     // appearance: 'dark',
     outDir: '../dist',
-    lastUpdated: true,
-    lastUpdatedText: 'Updated Date',
+    // lastUpdated: true,
+    // lastUpdatedText: 'Updated Date',
     themeConfig: {
         socialLinks: [
             { 
