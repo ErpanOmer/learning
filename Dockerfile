@@ -11,7 +11,5 @@ RUN npm ci --verbose
 COPY docs docs
 RUN npm run build
 
-CMD npm run dev
-
 FROM nginx:alpine
 COPY --from=builder /app/dist /usr/share/nginx/html
