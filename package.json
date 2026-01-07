@@ -1,17 +1,12 @@
 {
-  "name": "learning",
-  "version": "1.0.0",
-  "description": "learning",
+  "name": "leetcode",
   "type": "module",
-  "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
-  },
-  "author": "ErpanOmer",
-  "license": "ISC",
   "devDependencies": {
-    "vite-plugin-compression": "^0.5.1",
-    "vitepress": "^1.0.0-alpha.40"
+    "vitepress": "^1.6.3"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs --host",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   }
 }
